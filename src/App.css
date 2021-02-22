@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "BebasKai";
+  src: url("font/BebasKai.otf") format("opentype"),
+         url("font/BebasKai.ttf") format("truetype");
+ }
+ h1, p , span, a{
+  font-family: "BebasKai";
+ }
+ 
 .App {
   text-align: center;
 }
@@ -35,4 +44,237 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navigation-sub {
+display: flex;
+background: white;
+display: flex;
+position: fixed;
+
+width: 100%;
+z-index: 1001;
+
+}
+ .navigation-sub a{
+  margin:  3em;
+  text-decoration: unset;
+  font-weight: bold;
+  color:black;
+  height: 22px;
+}
+.logo{
+margin-right: 5em;/*  */
+margin:  2em 3em;
+width: 80px;
+height: auto;
+}
+.shop-btn{
+  margin:  3em;
+  position: absolute;
+  right: 4em;
+  width: 90px;
+height: auto;
+}
+.active-NavLink{
+  background-color: #ffed00;
+}
+.container{
+padding: 0 1em;
+max-width: 60rem;
+margin: 0 auto;
+width: 100%;
+}
+.about-maintext{
+text-transform: uppercase;
+font-weight: 500;
+font-size: 1.5rem;
+text-align: left;
+margin-bottom: 3rem;
+letter-spacing: .2rem;
+}
+.about-secondtext{
+  text-align: left;
+}
+.social-block{
+display: flex;
+flex-direction: column;
+margin: 0 1em;
+align-items: center;
+width: 6rem;
+}
+.social-block span{
+
+  font-size: 0.8rem;
+  }
+.social-block-row{
+  display: flex;
+  margin-bottom: 3rem;
+}
+.social-block-row a{
+color: black;
+text-decoration: none;
+}
+.social-block-email{
+  display: flex;
+flex-direction: column;
+  margin:auto;
+  align-items: center;
+}
+.social-main-row{
+padding-top: 7rem;
+}
+.link-email{
+  width: 100%;
+}
+
+.subnav a{
+text-decoration: none;
+color: black;
+}
+
+@media screen and (max-width: 990px)  {
+
+  .subnav{
+    width: 100%;
+    padding: 0 2em;
+    text-align: center;
+    flex-direction: row !important;
+    position: fixed;
+    top: 6rem;
+    margin-bottom: 3rem;
+    z-index: 100;
+    background: white;
+  }
+  .subnav a{
+  margin: 0 0.5em;
+  }
+  .navigation-responsive{
+    display: none;
+  }
+  .header-burger{
+    height: 6rem;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+}
+@media screen and (min-width: 991px)  {
+  .gallery-photo{
+    position: absolute;
+    width: 90%;
+    top: 25%;
+    margin-left: 10%;
+  }
+  .subnav{
+    width: fit-content;
+    text-align: left;
+    margin: 0 2em;
+    position: fixed;
+    top: 10rem;
+
+
+    background: white;
+  }
+  .navigation-responsive-burger{
+    display: none;
+  }
+}
+
+
+.about-container{
+  padding: 7em 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #f5f5f5;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: black;
+    text-decoration: none;
+}
+.bm-item:hover{
+
+  color: black !important;
+   
+}
+
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
