@@ -65,7 +65,7 @@ z-index: 1001;
 .logo{
 margin-right: 5em;/*  */
 margin:  2em 3em;
-width: 80px;
+width: 60px;
 height: auto;
 }
 .shop-btn{
@@ -121,7 +121,7 @@ flex-direction: column;
   align-items: center;
 }
 .social-main-row{
-padding-top: 7rem;
+padding-top: 10rem;
 }
 .link-email{
   width: 100%;
@@ -185,7 +185,7 @@ color: black;
 
 
 .about-container{
-  padding: 7em 1em;
+  padding: 10em 1em;
 }
 
 
