@@ -6,7 +6,7 @@ import Paintings from './projet-composant/paintings.js';
 import Books from './projet-composant/books.js';
 import Branding from './projet-composant/branding.js';
 import Clip from './projet-composant/clip.js';
-
+import { Redirect } from "react-router-dom";
 
 
 
@@ -25,29 +25,33 @@ function Project(props) {
         <div className="App">
           <div className="">
             <div className="nav  flex-column subnav">
-              <NavLink to="/paintings" activeClassName="active-NavLink">
+              <NavLink to="/project/paintings" activeClassName="active-NavLink">
                 PAINTINGS
               </NavLink>
-              <NavLink to="/books" activeClassName="active-NavLink">
+              <NavLink to="/project/books" activeClassName="active-NavLink">
                 BOOKS
               </NavLink>
-              <NavLink to="/branding" activeClassName="active-NavLink">
+              <NavLink to="/project/branding" activeClassName="active-NavLink">
                 BRANDING
               </NavLink>
 
-              <NavLink to="/design" activeClassName="active-NavLink">
+              <NavLink to="/project/design" activeClassName="active-NavLink">
                 DESIGN
               </NavLink>
-              <NavLink to="/clips" activeClassName="active-NavLink">
+              <NavLink to="/project/clips" activeClassName="active-NavLink">
                 CLIPS
               </NavLink>
             </div>
           </div>
-          <Route exact path="/paintings" component={Paintings} />
-          <Route exact path="/books" component={Books} />
-          <Route exact path="/branding" component={Branding} />
-          <Route exact path="/clips" component={Clip} />
-          <Route exact path="/design" component={Design} />
+          <Route exact path="/project" > 
+          <Redirect to="/project/paintings" /> 
+          </Route>
+         
+          <Route exact path="/project/paintings" component={Paintings} />
+          <Route exact path="/project/books" component={Books} />
+          <Route exact path="/project/branding" component={Branding} />
+          <Route exact path="/project/clips" component={Clip} />
+          <Route exact path="/project/design" component={Design} />
           {/* <Route exact path="/project" component={Projects} />
 
         <Route path="/press" component={Press} />

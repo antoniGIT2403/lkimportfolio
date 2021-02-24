@@ -131,9 +131,23 @@ padding-top: 10rem;
 text-decoration: none;
 color: black;
 }
+.gallery-photo p {
+  text-align: left;
+  max-width: 35rem;
+  margin: 2em auto;
+
+}
 
 @media screen and (max-width: 990px)  {
 
+  .detail-photo{
+    padding-top: 10rem;
+    margin: 0 1em;
+  }
+  .detail-photo img{
+    max-width: 100%;
+    height: auto;
+  }
   .subnav{
     width: 100%;
     padding: 0 2em;
@@ -189,11 +203,36 @@ color: black;
 }
 
 
+.landing-page{
+  z-index: 10000;
+  background-color: white;
+height: 100vh;
 
+position: relative;
 
+}
+.center-landing{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
 
-
-
+.bouton-landing{
+ 
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
+    width: 100%;
+}
+.btn-retour-detail{
+  font-weight: bold;
+  position: absolute;
+  cursor: pointer;
+}
 
 
 

@@ -2,17 +2,18 @@ import "./App.css";
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import Projects from "./project.js";
 import About from "./about.js";
+import Landing from "./landing.js";
 import Press from "./press.js";
 import Contact from "./contact.js";
 import logo from "./img/logo.gif";
 import shopbtn from "./img/shop.png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faAngleDoubleDown ,faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { slide as Menu } from "react-burger-menu";
 import React, { Component } from "react";
 
-library.add(fab, faEnvelope, faCoffee);
+library.add(fab, faEnvelope, faAngleDoubleDown, faArrowLeft);
 
 class App extends Component {
   constructor(props) {
@@ -74,6 +75,8 @@ class App extends Component {
             </NavLink>
           </Menu>
           </div>
+
+
           <div className="navigation navigation-responsive">
             <div className="navigation-sub">
               <img src={logo} alt="Project Imagee" className="logo" />
@@ -96,6 +99,7 @@ class App extends Component {
             </div>
           </div>
           <Route exact path="/project" component={Projects} />
+          <Route exact path="/" component={Landing} />
 
           <Route path="/press" component={Press} />
           <Route exact path="/contact" component={Contact} />
