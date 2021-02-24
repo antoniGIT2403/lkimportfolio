@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/lkimportfolio/static/css/main.a6fb450c.chunk.css",
-    "main.js": "/lkimportfolio/static/js/main.39313985.chunk.js",
-    "main.js.map": "/lkimportfolio/static/js/main.39313985.chunk.js.map",
-    "runtime-main.js": "/lkimportfolio/static/js/runtime-main.20321378.js",
-    "runtime-main.js.map": "/lkimportfolio/static/js/runtime-main.20321378.js.map",
-    "static/js/2.d99221c9.chunk.js": "/lkimportfolio/static/js/2.d99221c9.chunk.js",
-    "static/js/2.d99221c9.chunk.js.map": "/lkimportfolio/static/js/2.d99221c9.chunk.js.map",
-    "static/js/3.037e3eae.chunk.js": "/lkimportfolio/static/js/3.037e3eae.chunk.js",
-    "static/js/3.037e3eae.chunk.js.map": "/lkimportfolio/static/js/3.037e3eae.chunk.js.map",
+    "main.css": "/lkimportfolio/static/css/main.1418a37a.chunk.css",
+    "main.js": "/lkimportfolio/static/js/main.177b8c82.chunk.js",
+    "main.js.map": "/lkimportfolio/static/js/main.177b8c82.chunk.js.map",
+    "runtime-main.js": "/lkimportfolio/static/js/runtime-main.8640c1fd.js",
+    "runtime-main.js.map": "/lkimportfolio/static/js/runtime-main.8640c1fd.js.map",
+    "static/js/2.7a038d83.chunk.js": "/lkimportfolio/static/js/2.7a038d83.chunk.js",
+    "static/js/2.7a038d83.chunk.js.map": "/lkimportfolio/static/js/2.7a038d83.chunk.js.map",
+    "static/js/3.5be8bdd8.chunk.js": "/lkimportfolio/static/js/3.5be8bdd8.chunk.js",
+    "static/js/3.5be8bdd8.chunk.js.map": "/lkimportfolio/static/js/3.5be8bdd8.chunk.js.map",
     "index.html": "/lkimportfolio/index.html",
-    "static/css/main.a6fb450c.chunk.css.map": "/lkimportfolio/static/css/main.a6fb450c.chunk.css.map",
-    "static/js/2.d99221c9.chunk.js.LICENSE.txt": "/lkimportfolio/static/js/2.d99221c9.chunk.js.LICENSE.txt",
+    "static/css/main.1418a37a.chunk.css.map": "/lkimportfolio/static/css/main.1418a37a.chunk.css.map",
+    "static/js/2.7a038d83.chunk.js.LICENSE.txt": "/lkimportfolio/static/js/2.7a038d83.chunk.js.LICENSE.txt",
     "static/media/App.css": "/lkimportfolio/static/media/BebasKai.af73723c.otf",
     "static/media/logo.8186d634.gif": "/lkimportfolio/static/media/logo.8186d634.gif",
     "static/media/shop.d3c4a5c5.png": "/lkimportfolio/static/media/shop.d3c4a5c5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.20321378.js",
-    "static/js/2.d99221c9.chunk.js",
-    "static/css/main.a6fb450c.chunk.css",
-    "static/js/main.39313985.chunk.js"
+    "static/js/runtime-main.8640c1fd.js",
+    "static/js/2.7a038d83.chunk.js",
+    "static/css/main.1418a37a.chunk.css",
+    "static/js/main.177b8c82.chunk.js"
   ]
 }
