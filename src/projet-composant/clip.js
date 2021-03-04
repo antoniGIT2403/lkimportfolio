@@ -1,18 +1,11 @@
 
-import Gallery from "react-photo-gallery";
-import React, { useCallback } from "react";
+import React from "react";
+import GalleryComposant from "../composant-generique/galleryComposant";
 
- 
 function Clip(props) {
-    const openLightbox = useCallback((event, { photo, index }) => {
-  console.log(index)
-  console.log(photo)
-      }, []);
+
   return (
-    <div className="gallery-photo">
-     
-      <Gallery photos={photos} direction={"column"} onClick={openLightbox} />
-    </div>
+   <GalleryComposant photos={photos}></GalleryComposant>
   )
 }
  

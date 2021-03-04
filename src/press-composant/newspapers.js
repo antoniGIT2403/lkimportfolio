@@ -2,14 +2,14 @@
 import React from "react";
 import GalleryComposant from "../composant-generique/galleryComposant";
  
-function Books(props) {
+function Newspapers(props) {
    
   return (
     <GalleryComposant photos={photos}></GalleryComposant>
    )
 }
  
-export default Books;
+export default Newspapers;
 export const photos = [
  
     {

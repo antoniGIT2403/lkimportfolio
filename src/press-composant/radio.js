@@ -3,14 +3,14 @@ import React from "react";
 import GalleryComposant from "../composant-generique/galleryComposant";
 
 
-    function Design(props) {
+    function Radio(props) {
  
       return (
         <GalleryComposant photos={photos}></GalleryComposant>
        )
   }
  
-export default Design;
+export default Radio;
 export const photos = [
     {
         src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",

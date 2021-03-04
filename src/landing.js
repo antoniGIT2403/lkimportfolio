@@ -27,7 +27,7 @@ function Landing(props) {
           <Route exact path="/project" component={Projects} />
         </BrowserRouter> */}
 
-      <FontAwesomeIcon icon={["fa", "angle-double-down"]} size="5x" />
+      <FontAwesomeIcon  icon={["fa", "angle-double-down"]} size="4x" />
    </div>
      
     </div>

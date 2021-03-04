@@ -61,11 +61,12 @@ z-index: 1001;
   font-weight: bold;
   color:black;
   height: 22px;
+  letter-spacing: 3px;
 }
 .logo{
 margin-right: 5em;/*  */
 margin:  2em 3em;
-width: 60px;
+width: 70px;
 display: flex;
 }
 .shop-btn{
@@ -121,7 +122,7 @@ flex-direction: column;
   align-items: center;
 }
 .social-main-row{
-padding-top: 10rem;
+  padding-top: 13rem;
 }
 .link-email{
   width: 100%;
@@ -130,6 +131,7 @@ padding-top: 10rem;
 .subnav a{
 text-decoration: none;
 color: black;
+letter-spacing: 3px;
 }
 .gallery-photo p {
   text-align: left;
@@ -138,13 +140,32 @@ color: black;
 
 }
 
+.seemore-btn{
+background: #ffed00;
+border-radius: 5px;
+font-family: "BebasKai";
+}
+
+
 @media screen and (max-width: 990px)  {
 
+  .keep-scroll{
+    text-align: center !important;
+  }
   .detail-photo{
     padding-top: 10rem;
     margin: 0 1em;
   }
   .detail-photo img{
+    max-width: 100%;
+    height: auto;
+  }
+  .focus-photo{
+    padding-top: 10rem !important;
+    padding: 0 1em;
+    height: 190vh  !important;
+  }
+  .focus-photo img{
     max-width: 100%;
     height: auto;
   }
@@ -179,8 +200,13 @@ color: black;
   .gallery-photo{
     position: absolute;
     width: 90%;
+   
+    
     top: 25%;
     margin-left: 10%;
+  }
+  .keep-scroll{
+  display: none;
   }
   .subnav{
     width: fit-content;
@@ -224,7 +250,7 @@ position: relative;
     bottom: 0;
     position: absolute;
     display: flex;
-    
+    color: #ffed00;
     justify-content: center;
     width: 100%;
 }
@@ -235,7 +261,46 @@ position: relative;
 }
 
 
+.focus-photo{
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
 
+
+.photo-picked {
+  width: fit-content;
+  height: auto;
+  
+}
+.hover-img{
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000cb;
+  color: white;
+  left: 0;
+  top: 0;
+}
+.seemore-btn:hover{
+transform: scale(1.1);
+}
+.hover-title{
+  margin-top: 4em;
+ 
+}
+
+.subnav a:hover {
+ transform: scale(1.1);
+ font-weight: bold;
+}
+.navigation-sub a:hover{
+  transform: scale(1.2);
+  font-weight: bolder;
+}
 
 
 

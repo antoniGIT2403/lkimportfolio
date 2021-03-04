@@ -4,14 +4,14 @@ import React from "react";
 import GalleryComposant from "../composant-generique/galleryComposant";
 
  
-function Paintings(props) {
+function Tv(props) {
 
   return (
     <GalleryComposant photos={photos}></GalleryComposant>
    )
 }
  
-export default Paintings;
+export default Tv;
 export const photos = [
   {
       src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
