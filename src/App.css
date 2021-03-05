@@ -3,8 +3,19 @@
   src: url("font/BebasKai.otf") format("opentype"),
          url("font/BebasKai.ttf") format("truetype");
  }
- h1, p , span, a{
+ @font-face {
+  font-family: "NeutraTextBookItalic";
+  src: url("font/NeutraTextBookItalic.otf") format("opentype")
+ }
+ @font-face {
+  font-family: "NeutraTextBookItalicAlt";
+  src: url("font/NeutraTextBookItalicAlt.otf") format("opentype")
+ }
+ h1, span, a{
   font-family: "BebasKai";
+ }
+ p {
+  font-family: "NeutraTextBookItalic";
  }
  
 .App {
@@ -50,7 +61,7 @@ display: flex;
 background: white;
 display: flex;
 position: fixed;
-
+max-height: 140px;
 width: 100%;
 z-index: 1001;
 
@@ -62,6 +73,7 @@ z-index: 1001;
   color:black;
   height: 22px;
   letter-spacing: 3px;
+
 }
 .logo{
 margin-right: 5em;/*  */
@@ -87,6 +99,7 @@ margin: 0 auto;
 width: 100%;
 }
 .about-maintext{
+font-family: "BebasKai" !important;
 text-transform: uppercase;
 font-weight: 500;
 font-size: 1.5rem;
