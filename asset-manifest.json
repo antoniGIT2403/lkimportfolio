@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lkimportfolio/static/css/main.e91a0fe1.chunk.css",
+    "main.css": "/lkimportfolio/static/css/main.e8bd0397.chunk.css",
     "main.js": "/lkimportfolio/static/js/main.081e6228.chunk.js",
     "main.js.map": "/lkimportfolio/static/js/main.081e6228.chunk.js.map",
     "runtime-main.js": "/lkimportfolio/static/js/runtime-main.f934fec3.js",
@@ -10,16 +10,16 @@
     "static/js/3.bdefe048.chunk.js": "/lkimportfolio/static/js/3.bdefe048.chunk.js",
     "static/js/3.bdefe048.chunk.js.map": "/lkimportfolio/static/js/3.bdefe048.chunk.js.map",
     "index.html": "/lkimportfolio/index.html",
-    "static/css/main.e91a0fe1.chunk.css.map": "/lkimportfolio/static/css/main.e91a0fe1.chunk.css.map",
+    "static/css/main.e8bd0397.chunk.css.map": "/lkimportfolio/static/css/main.e8bd0397.chunk.css.map",
     "static/js/2.773c45ba.chunk.js.LICENSE.txt": "/lkimportfolio/static/js/2.773c45ba.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/lkimportfolio/static/media/BebasKai.af73723c.otf",
+    "static/media/App.css": "/lkimportfolio/static/media/NeutraTextBookItalicAlt.29be97c4.otf",
     "static/media/logo.8186d634.gif": "/lkimportfolio/static/media/logo.8186d634.gif",
     "static/media/shop.d3c4a5c5.png": "/lkimportfolio/static/media/shop.d3c4a5c5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f934fec3.js",
     "static/js/2.773c45ba.chunk.js",
-    "static/css/main.e91a0fe1.chunk.css",
+    "static/css/main.e8bd0397.chunk.css",
     "static/js/main.081e6228.chunk.js"
   ]
 }
