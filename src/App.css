@@ -68,6 +68,7 @@ margin-right: 5em;/*  */
 margin:  2em 3em;
 width: 70px;
 display: flex;
+min-height: 70px;
 }
 .shop-btn{
   margin:  3em;
