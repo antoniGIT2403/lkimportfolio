@@ -148,10 +148,10 @@ color: black;
 letter-spacing: 3px;
 }
 .gallery-photo p {
-  text-align: left;
+  text-align: center;
   max-width: 35rem;
   margin: 2em auto;
-
+overflow-wrap: break-word;
 }
 
 .seemore-btn{
@@ -162,7 +162,10 @@ font-family: "BebasKai";
 
 
 @media screen and (max-width: 990px)  {
-
+ .iframe-detail{
+ width:100%;
+ height: 215px;
+  }
   .keep-scroll{
     text-align: center !important;
   }
@@ -208,9 +211,21 @@ font-family: "BebasKai";
     width: 100%;
     z-index: 1000;
   }
+    .gallery-photo{
+     padding-top: 10em;
+  }
 
 }
 @media screen and (min-width: 991px)  {
+  
+  .iframe-detail{
+    width:700px;
+    height:450px;
+  }
+  .detail-photo img{
+    max-width: 700px;
+    height: auto;
+    }
   .gallery-photo{
     position: absolute;
     width: 90%;
@@ -315,6 +330,26 @@ transform: scale(1.1);
   transform: scale(1.2);
   font-weight: bolder;
 }
+.media-detail{
+  display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.space-media{
+margin: 2em 0;
+}
+
+.link-ext span{
+  font-size:1.3em
+}
+.link-ext a{
+  font-size:1.3em
+}
+
+
 
 
 
