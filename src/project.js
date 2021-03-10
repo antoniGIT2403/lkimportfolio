@@ -6,6 +6,7 @@ import Paintings from "./projet-composant/paintings.js";
 import Books from "./projet-composant/books.js";
 import Branding from "./projet-composant/branding.js";
 import Clip from "./projet-composant/clip.js";
+import All from "./projet-composant/all.js";
 import { Redirect } from "react-router-dom";
 
 function Project(props) {
@@ -15,6 +16,9 @@ function Project(props) {
         <div className="App">
           <div className="">
             <div className="nav  flex-column subnav">
+               <NavLink to="/project/all" activeClassName="active-NavLink">
+                ALL
+              </NavLink>
               <NavLink to="/project/paintings" activeClassName="active-NavLink">
                 PAINTINGS
               </NavLink>
@@ -34,9 +38,9 @@ function Project(props) {
             </div>
           </div>
           <Route exact path="/project">
-            <Redirect to="/project/paintings" />
+            <Redirect to="/project/all" />
           </Route>
-
+      <Route exact path="/project/all" component={All} />
           <Route exact path="/project/paintings" component={Paintings} />
           <Route exact path="/project/books" component={Books} />
           <Route exact path="/project/branding" component={Branding} />

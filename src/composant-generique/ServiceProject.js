@@ -7,12 +7,18 @@ function ServicePost(props) {
   const [projects, setPhotos] = useState(null);
   const [posts, setPosts] = useState(null);
   useEffect(() => {
+    var projectLab = 'projects';
+    if(props.categorie !== "all"){
+     projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"
+    }
     const fetchPhotos = async () => {
       const { projects } = await request(
         "https://api-eu-central-1.graphcms.com/v2/cklxqdvb5adg701z5dr479rzm/master",
         `
       { 
-        projects(where: {categorie:${props.categorie}}) {
+        
+          ${projectLab}
+          {
           id
           titre
           description
