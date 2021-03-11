@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Projects from "./project.js";
 import { useHistory } from "react-router-dom";
 
+import landingvideo from "./img/landingvideo.mp4";
 
 
 function Landing(props) {
@@ -17,7 +18,16 @@ function Landing(props) {
   return (
     <div className="landing-page">
       <div className="center-landing">
-   BIENVENU BANDE DE CHACAL
+      <video  className="video-landing"  loop autoPlay muted>
+
+
+
+<source src={landingvideo}
+        type="video/mp4"/>
+
+Sorry, your browser doesn't support embedded videos.
+</video>
+
       </div>
       <div className="bouton-landing"   onClick={routeChange}>
       {/* <BrowserRouter>

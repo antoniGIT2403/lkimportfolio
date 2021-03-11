@@ -17,7 +17,7 @@
  p {
   font-family: "NeutraTextBookItalic";
  }
- 
+/* html {cursor: url(font/YellowNormal.cur), auto !important;} End https://www.cursors-4u.com */
 .App {
   text-align: center;
 }
@@ -73,6 +73,7 @@ z-index: 1001;
   color:black;
   height: 22px;
   letter-spacing: 3px;
+  font-size: 1.1rem;
 
 }
 .logo{
@@ -96,7 +97,7 @@ cursor: pointer;
 }
 .container{
 padding: 0 1em;
-max-width: 60rem;
+max-width: 50rem;
 margin: 0 auto;
 width: 100%;
 }
@@ -115,7 +116,7 @@ letter-spacing: .15rem;
   line-height: 1.3rem;
 }
 .aboutme-img{
-  width: 200px;
+  width: 175px;
 animation: popin 2s
 }
 @keyframes popin {
@@ -182,6 +183,9 @@ margin-top: 2rem;
 
 
 @media screen and (max-width: 990px)  {
+  .video-landing{
+    width: 300px;
+  }
   .leniparle-gif{
     /* bottom: 0em;
     right: 3em; */
@@ -191,7 +195,7 @@ margin-top: 2rem;
   }
   .shop-btn{
     margin: 1.6em 1em;
-  width: 100px;
+  width: 110px;
     right: 0;
   
   }
@@ -235,7 +239,7 @@ margin-top: 2rem;
   }
   .subnav{
     width: 100%;
-    padding: 0.7em 2em;
+    padding: 0.7em 1em;
     text-align: center;
     flex-direction: row !important;
     position: fixed;
@@ -243,6 +247,7 @@ margin-top: 2rem;
     margin-bottom: 3rem;
     z-index: 100;
     background: white;
+    border-bottom: 1px solid;
   }
   .subnav a{
   margin: 0 0.5em;
@@ -252,11 +257,12 @@ margin-top: 2rem;
   }
   .header-burger{
     height: 6rem;
-    background-color: #f1f1f1;
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    border-bottom: 1px solid black;
   }
 
 
@@ -269,13 +275,17 @@ margin-top: 2rem;
 }
 } */
 @media screen and (min-width: 991px)  {
+  .video-landing{
+    width: 600px;
+  }
   .leniparle-gif{
-    bottom: 0em;
-    right: 3em;
-    width: 220px;
+   
+    top: 10em;
+    right: 2em;
+    width: 240px;
     position: absolute;
-    -webkit-animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
-    animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+    -webkit-animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
+    animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
   }
 
 /* ----------------------------------------------
@@ -445,8 +455,14 @@ transform: scale(1.2);
 }
  .hover-title h4{
   font-family: "BebasKai";
+ letter-spacing: 0.12em;
+} 
+.hover-title h1{
+  font-size: 4rem;
+  letter-spacing: 0.08em;
  
 } 
+
 
 .subnav a:hover {
  transform: scale(1.1);
@@ -528,13 +544,16 @@ margin: 2em 0;
 
 
 .titre-detail{
-  font-size: 2.7rem;
+  font-size: 5rem;
+  letter-spacing: 0.16rem;
+  margin-top: 2rem;
 }
 .description-detail{
-  font-family: "BebasKai";
+  line-height: 1.2em;
 }
 .date-detail{
-  line-height: 1.6em;
+  letter-spacing: 0.16rem;
+  font-family: "BebasKai";
 }
 
 .social-block:hover {
