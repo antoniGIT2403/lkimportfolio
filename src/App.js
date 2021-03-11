@@ -6,7 +6,7 @@ import Landing from "./landing.js";
 import Press from "./press.js";
 import Contact from "./contact.js";
 import logo from "./img/logo.gif";
-import shopbtn from "./img/shop.png";
+import shopbtn from "./img/shop-gif.gif";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faAngleDoubleDown ,faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -39,11 +39,13 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
         <div className="header-burger">
+        <img src={shopbtn} alt="Project e" className="shop-btn" />
           <Menu
             isOpen={this.state.menuOpen}
             onStateChange={(state) => this.handleStateChange(state)}
             burgerButtonClassName={"navigation-responsive-burger"}
           >
+                <img src={logo} alt="Project Imagee" className="logo" />
             <NavLink
               to="/project"
               onClick={() => this.closeMenu()}

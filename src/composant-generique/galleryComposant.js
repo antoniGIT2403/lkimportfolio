@@ -46,41 +46,19 @@ function GalleryComposant(props) {
           <FontAwesomeIcon icon={["fa", "arrow-left"]} />
           RETOUR
         </div>
-        <h1> {photoSelected?.titre}</h1> <h5>{photoSelected?.date}</h5>{" "}
-        <p>{photoSelected?.description}</p>
-        {/* <img src={src}></img> */}
+        <h1 className="titre-detail" > {photoSelected?.titre}</h1> <h5 className="date-detail">{photoSelected?.date}</h5>{" "}
+        <p className="description-detail">{photoSelected?.description}</p>
+       
 
          <div className="media-detail">
         <MediaDetail photoselected={photoSelected}></MediaDetail>
      </div>
-        {/* {photoSelected?.urlPremiereVideo ? (
-              <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
-              frameborder='0'
-              allow='autoplay; encrypted-media'
-              allowfullscreen
-              title='video'
-      />
-
-
-        
-      ) : (
-        
       
-        <Gallery columns
-          photos={[
-            { src: photoSelected.images[0]?.url, width: photoSelected.width, height:  photoSelected.height },
-            { src: photoSelected.images[1]?.url, width: photoSelected.width2, height:  photoSelected.height2 },
-            { src: photoSelected.images[2]?.url, width: photoSelected.width3, height:  photoSelected.height3 },
-            { src: photoSelected.images[3]?.url, width: photoSelected.width4, height:  photoSelected.height4 }
-          ]}
-
-        />
-        )} */}
       </div>
     );
   }
 
-  return <div className="gallery-photo ">{photo}</div>;
+  return <div className="gallery-photo scale-in-top ">{photo}</div>;
 }
 
 export default GalleryComposant;

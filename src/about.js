@@ -1,11 +1,18 @@
 import React from "react"
 import './App.css';
+import aboutme from "./img/about-me.png";
+import leniparle from "./img/leni-parle.gif";
+
 function About(props) {
   return (
     <div className="about-container">
-      <h1>About</h1>
-      <div className="container">
 
+<div className="about-imgdiv">
+    <img src={aboutme} className="aboutme-img"></img>
+   
+ 
+    </div>
+    <div className="container">
       <p className="about-maintext">
       lNam aut opta doluptur? Ure nest audistiur, estiure dolore
 cum esti quis pa ipsam, cus cusdanis minis suntiae nonsequos
@@ -28,6 +35,7 @@ doluptate necatur arisquas etur rat et eliquidi dita exer
         </p>
   
         </div>
+        <img src={leniparle} className="leniparle-gif"></img>
     </div>
   )
 }

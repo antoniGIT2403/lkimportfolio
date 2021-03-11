@@ -85,7 +85,7 @@ const SelectedImage = ({
         <div className="hover-img" onMouseLeave={() => setIsShown(false)}>
           <div className="hover-title"> 
         <h1> {photoObj.titre}</h1>
-        <h5>{photoObj.date}</h5>
+        <h4>{photoObj.date}</h4>
         <button className="seemore-btn" > See more </button>
         </div>
         </div>
