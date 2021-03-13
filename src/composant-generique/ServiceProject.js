@@ -60,7 +60,7 @@ function ServicePost(props) {
       postArray.push(
         new Post(
           photo.date,
-          photo.images[0].url,
+          photo.images[0]?.url,
           photo.description,
           photo.mainWidth,
           photo.mainHeight,

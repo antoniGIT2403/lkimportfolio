@@ -34,7 +34,7 @@ function GalleryComposant(props) {
   };
 
   if (isSelected) {
-    photo = <Gallery renderImage={imageRenderer} photos={props.photos} />;
+    photo = <Gallery renderImage={imageRenderer} photos={props.photos}  />;
   } else {
     // let src = photoSelected?.src;
 
@@ -46,7 +46,10 @@ function GalleryComposant(props) {
           <FontAwesomeIcon icon={["fa", "arrow-left"]} />
           RETOUR
         </div>
-        <h1 className="titre-detail" > {photoSelected?.titre}</h1> <h5 className="date-detail">{photoSelected?.date}</h5>{" "}
+      
+        <h1 className="titre-detail" > {photoSelected?.titre}</h1>
+      
+         <h5 className="date-detail">{photoSelected?.date}</h5>{" "}
         <p className="description-detail">{photoSelected?.description}</p>
        
 

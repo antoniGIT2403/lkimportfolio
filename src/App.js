@@ -12,6 +12,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faAngleDoubleDown ,faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { slide as Menu } from "react-burger-menu";
 import React, { Component } from "react";
+import {withRouter} from 'react-router-dom';
+import PropTypes from "prop-types";
 
 library.add(fab, faEnvelope, faAngleDoubleDown, faArrowLeft);
 
@@ -22,6 +24,11 @@ class App extends Component {
       menuOpen: false,
     };
   }
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
 
   // This keeps your state in sync with the opening/closing of the menu
   // via the default means, e.g. clicking the X, pressing the ESC key etc.
@@ -35,6 +42,10 @@ class App extends Component {
   }
 
   render() {
+    const { match, location, history } = this.props;
+    const Button = withRouter(({ history }) => (
+      <img src={logo} onClick={() => history.push('/lkimportfolio')} alt="Project Imagee" className="logo" />
+    ))
     return (
       <BrowserRouter>
         <div className="App">
@@ -45,10 +56,11 @@ class App extends Component {
             onStateChange={(state) => this.handleStateChange(state)}
             burgerButtonClassName={"navigation-responsive-burger"}
           >
-                <img src={logo} alt="Project Imagee" className="logo" />
+            
+               <img src={logo}  alt="Project Imagee" className="logo" /> 
             <NavLink
               to="/project"
-              onClick={() => this.closeMenu()}
+              
               activeClassName="active-NavLink"
             >
               PROJECTS
@@ -81,7 +93,9 @@ class App extends Component {
 
           <div className="navigation navigation-responsive">
             <div className="navigation-sub">
-              <img src={logo} alt="Project Imagee" className="logo" />
+              
+           
+              <Button></Button>
 
               <NavLink to="/project" activeClassName="active-NavLink">
                 PROJECTS
@@ -101,7 +115,7 @@ class App extends Component {
             </div>
           </div>
           <Route exact path="/project" component={Projects} />
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/lkimportfolio" component={Landing} />
 
           <Route path="/press" component={Press} />
           <Route exact path="/contact" component={Contact} />
