@@ -7,10 +7,14 @@ function ServicePress(props) {
   const [photos, setPhotos] = useState(null);
   const [posts, setPosts] = useState(null);
   useEffect(() => {
-     var projectLab = 'presses';
-    if(props.categorie !== "all"){
-     projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"
+   
+    var projectLab = 'presses';
+    if(props.categorie === "all"){
+     projectLab =  projectLab + "(orderBy: ordreApparition_DESC)"
     }
+  else {
+      projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"
+     }
     const fetchPhotos = async () => {
       const { presses } = await request(
         "https://api-eu-central-1.graphcms.com/v2/cklxqdvb5adg701z5dr479rzm/master",

@@ -8,9 +8,12 @@ function ServicePost(props) {
   const [posts, setPosts] = useState(null);
   useEffect(() => {
     var projectLab = 'projects';
-    if(props.categorie !== "all"){
-     projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"
+    if(props.categorie === "all"){
+     projectLab =  projectLab + "(orderBy: ordreApparition_DESC)"
     }
+  else {
+      projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"
+     }
     const fetchPhotos = async () => {
       const { projects } = await request(
         "https://api-eu-central-1.graphcms.com/v2/cklxqdvb5adg701z5dr479rzm/master",
