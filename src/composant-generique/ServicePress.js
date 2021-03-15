@@ -41,6 +41,7 @@ function ServicePress(props) {
             urlPremiereVideo
             urlSecondeVideo
             lienExterieur
+            lieninsta
           
           }
         }
@@ -75,7 +76,8 @@ function ServicePress(props) {
           photo.fourthWidth,
           photo.urlPremiereVideo,
           photo.urlSecondeVideo,
-          photo.lienExterieur
+          photo.lienExterieur,
+          photo.lieninsta
          
         )
       );

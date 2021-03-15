@@ -41,6 +41,7 @@ function ServicePost(props) {
           urlPremiereVideo
           urlSecondeVideo
           lienExterieur
+          lieninsta
         
         }
       }
@@ -77,7 +78,8 @@ function ServicePost(props) {
           photo.fourthWidth,
           photo.urlPremiereVideo,
           photo.urlSecondeVideo,
-          photo.lienExterieur
+          photo.lienExterieur,
+          photo.lieninsta
           
         )
       );

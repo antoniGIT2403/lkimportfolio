@@ -1,5 +1,5 @@
 export class Post {
-    constructor(date, src,description, width, height, titre, images, height2,width2 , height3,width3 , height4,width4, urlPremiereVideo ,urlSecondeVideo,  lienExterieur ) {
+    constructor(date, src,description, width, height, titre, images, height2,width2 , height3,width3 , height4,width4, urlPremiereVideo ,urlSecondeVideo,  lienExterieur,lieninsta ) {
       this.date = date;
       this.src = src;
       this.description = description;
@@ -17,6 +17,7 @@ export class Post {
       this.urlPremiereVideo = urlPremiereVideo;
       this.urlSecondeVideo = urlSecondeVideo;
       this.lienExterieur = lienExterieur;
+      this.lieninsta = lieninsta;
    
     }
   }
