@@ -9,20 +9,22 @@ import Clip from "./projet-composant/clip.js";
 import All from "./projet-composant/all.js";
 import { Redirect } from "react-router-dom";
 
+
 function Project(props) {
+
   return (
     <div>
       <BrowserRouter>
         <div className="App">
           <div className="">
             <div className="nav  flex-column subnav">
-               <NavLink to="/project/all" activeClassName="active-NavLink">
+               <NavLink to="/project/all" activeClassName="active-NavLink"  >
                 ALL
               </NavLink>
               <NavLink to="/project/paintings" activeClassName="active-NavLink">
                 PAINTINGS
               </NavLink>
-              <NavLink to="/project/books" activeClassName="active-NavLink">
+              <NavLink to="/project/books" activeClassName="active-NavLink" >
                 BOOKS
               </NavLink>
               <NavLink to="/project/branding" activeClassName="active-NavLink">

@@ -84,6 +84,11 @@ display: flex;
 min-height: 70px;
 cursor: pointer;
 }
+.shop-btn:hover{
+  filter: drop-shadow(8px 8px 10px #ffed00) ; 
+  transform: scale(1.2);
+  /* filter: hue-rotate(10deg); */
+}
 .shop-btn{
   margin:  2.5em;
   position: absolute;
@@ -118,6 +123,10 @@ letter-spacing: .15rem;
 .aboutme-img{
   width: 175px;
 animation: popin 2s
+}
+.contactme-img{
+  width: 300px;
+  animation: popin 2s
 }
 @keyframes popin {
   0% {
@@ -280,10 +289,9 @@ margin-top: 2rem;
   }
   .leniparle-gif{
    
-    top: 25rem;
-    right: 2em;
-    width: 240px;
-    position: absolute;
+    position: relative;
+    width: 300px;
+    /* position: absolute; */
     -webkit-animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
     animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.4s both;
   }
@@ -363,8 +371,7 @@ margin-top: 2rem;
     position: absolute;
     width: 90%;
     height: 100vh;
-    
-    top: 25%;
+    top:18%;
     margin-left: 12%
   }
   .keep-scroll{
@@ -403,6 +410,11 @@ position: relative;
   transform: translate(-50%, -50%);
   
 }
+.bouton-landing svg:hover{
+ 
+color:black;
+
+}
 
 .bouton-landing{
  
@@ -420,7 +432,11 @@ position: relative;
   z-index: 10;
   left: 1.7em;
 }
+.btn-retour-detail:hover{
+color:#ffed00;
+transform: scale(1.2);
 
+}
 
 .focus-photo{
   z-index: 100;
@@ -479,6 +495,7 @@ transform: scale(1.2);
     max-width: 700px;
     align-content: center;
     margin: 0 auto;
+    max-height: 100vh;
 }
 
 .space-media{
