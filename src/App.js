@@ -116,7 +116,7 @@ class App extends Component {
           </div>
           <Route exact path="/project" component={Projects} />
           <Route exact path="/lkimportfolio" component={Landing} />
-
+          <Route exact path="/" component={Landing} />
           <Route path="/press" component={Press} />
           <Route exact path="/contact" component={Contact} />
 
