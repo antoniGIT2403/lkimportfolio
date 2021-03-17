@@ -54,7 +54,7 @@ const MediaDetail = (props) => {
   }
   if (props.photoselected.lieninsta) {
     var videoInsta = (
-      <div className="space-media">
+      <div className="space-media-insta">
         <InstagramEmbed
   url={props.photoselected.lieninsta}
   clientAccessToken='625610778288228|6426c6a48886fdbbbe33f36c541c38e6'

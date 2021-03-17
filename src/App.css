@@ -369,7 +369,7 @@ margin-top: 2rem;
     }
   .gallery-photo{
     position: absolute;
-    width: 90%;
+    width: 88%;
     height: 100vh;
     top:18%;
     margin-left: 12%
@@ -503,6 +503,9 @@ margin: 2em 0;
 /* max-height: 100vh; */
 
 justify-content: center;
+}
+.space-media-insta{
+  margin: 2em auto;
 }
 
 .link-ext span{
