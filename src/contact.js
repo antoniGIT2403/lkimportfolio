@@ -9,12 +9,12 @@ function Contact(props) {
     <div>
   
       <div className="row social-main-row" >
-        <div className="col-lg-6 social-block-row col-12">    
+        <div className="col-lg-6 social-block-row col-12 social-item">    
         <a className="link-email" href="mailto:lkimofficiel@gmail.com
 ?subject=prise de contact" target="_blank">  <div className="social-block-email" > <FontAwesomeIcon icon={["fa", "envelope"]} size="6x" /> <span> LKIMOFFICIEL@GMAIL.COM</span></div> </a>
       
         </div>
-        <div className="col-lg-6 col-12">  
+        <div className="col-lg-6 col-12 social-items" >  
         
         <div className="social-block-row">
         <a href="https://www.facebook.com/" target="_blank">    <div className="social-block"> <FontAwesomeIcon icon={["fab", "youtube"]} size="4x" /> <span> @MARABOUMUSIK</span></div></a>

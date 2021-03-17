@@ -57,7 +57,7 @@ class App extends Component {
             burgerButtonClassName={"navigation-responsive-burger"}
           >
             
-               <img src={logo}  alt="Project Imagee" className="logo" /> 
+            <Button></Button>
             <NavLink
               to="/project"
               
