@@ -27,7 +27,7 @@ import landingvideo from "./img/landingvideo.mp4";
     return (
       <div className="landing-page">
         <div className="center-landing">
-        <video  className="video-landing"  loop playsinline  autoPlay muted>
+        <video  className="video-landing"  loop playsInline  autoPlay muted>
   
   
   

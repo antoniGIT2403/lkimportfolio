@@ -501,7 +501,7 @@ transform: scale(1.2);
 .space-media{
 margin: 2em 0;
 /* max-height: 100vh; */
-display: flex;
+
 justify-content: center;
 }
 
