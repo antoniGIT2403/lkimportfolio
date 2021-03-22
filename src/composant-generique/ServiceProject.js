@@ -9,7 +9,7 @@ function ServicePost(props) {
   useEffect(() => {
     var projectLab = 'projects';
     if(props.categorie === "all"){
-     projectLab =  projectLab + "(orderBy: ordreApparition_DESC)"
+     projectLab =  projectLab + "(orderBy: ordreApparition_ASC)"
     }
   else {
       projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"

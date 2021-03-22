@@ -10,7 +10,7 @@ function ServicePress(props) {
    
     var projectLab = 'presses';
     if(props.categorie === "all"){
-     projectLab =  projectLab + "(orderBy: ordreApparition_DESC)"
+     projectLab =  projectLab + "(orderBy: ordreApparition_ASC)"
     }
   else {
       projectLab =  projectLab + "(where: {categorie:"+ props.categorie +"})"

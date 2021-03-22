@@ -9,13 +9,13 @@ import logo from "./img/logo.gif";
 import shopbtn from "./img/shop-gif.gif";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faAngleDoubleDown ,faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faAngleDoubleDown ,faArrowLeft, faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { slide as Menu } from "react-burger-menu";
 import React, { Component } from "react";
 import {withRouter} from 'react-router-dom';
 import PropTypes from "prop-types";
 
-library.add(fab, faEnvelope, faAngleDoubleDown, faArrowLeft);
+library.add(fab, faEnvelope, faAngleDoubleDown, faArrowLeft, faDesktop);
 
 class App extends Component {
   constructor(props) {
