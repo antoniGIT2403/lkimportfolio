@@ -50,7 +50,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
         <div className="header-burger">
-        <img src={shopbtn} alt="Project e" className="shop-btn" />
+        <a href='https://lkimshop.bigcartel.com/?fbclid=IwAR1t93AARycSHv1ztEYi5e50bVfET_Xc66YOjXduBtWK25qo7wD94Mzq1tM'  target="_blank"><img src={shopbtn} alt="Project e" className="shop-btn" /> </a>
           <Menu
             isOpen={this.state.menuOpen}
             onStateChange={(state) => this.handleStateChange(state)}
@@ -111,7 +111,9 @@ class App extends Component {
                 ABOUT
               </NavLink>
 
-              <img src={shopbtn} alt="Project e" className="shop-btn" />
+            
+              <div> <a href='https://lkimshop.bigcartel.com/?fbclid=IwAR1t93AARycSHv1ztEYi5e50bVfET_Xc66YOjXduBtWK25qo7wD94Mzq1tM'  target="_blank"><img src={shopbtn} alt="Project e" className="shop-btn" /> </a></div>
+ 
             </div>
           </div>
           <Route exact path="/project" component={Projects} />
