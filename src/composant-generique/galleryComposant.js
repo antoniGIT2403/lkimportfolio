@@ -27,14 +27,10 @@ function GalleryComposant(props) {
   const handleOnClick = (photo) => {
     setIsSelected(!isSelected);
     setPhotoSelected(photo);
-    console.log("photo")
-    console.log(photo)
-    console.log("photoSelected")
-    console.log(photoSelected)
   };
 
   if (isSelected) {
-    photo = <Gallery renderImage={imageRenderer} photos={props.photos}  />;
+    photo = <Gallery renderImage={imageRenderer} photos={props.photos} />;
   } else {
     // let src = photoSelected?.src;
 
@@ -46,17 +42,12 @@ function GalleryComposant(props) {
           <FontAwesomeIcon icon={["fa", "arrow-left"]} />
           RETOUR
         </div>
-      
-        <h1 className="titre-detail" > {photoSelected?.titre}</h1>
-      
-         <h5 className="date-detail">{photoSelected?.date}</h5>{" "}
+        <h1 className="titre-detail"> {photoSelected?.titre}</h1>
+        <h5 className="date-detail">{photoSelected?.date}</h5>{" "}
         <p className="description-detail">{photoSelected?.description}</p>
-       
-
-         <div className="media-detail">
-        <MediaDetail photoselected={photoSelected}></MediaDetail>
-     </div>
-      
+        <div className="media-detail">
+          <MediaDetail photoselected={photoSelected}></MediaDetail>
+        </div>
       </div>
     );
   }

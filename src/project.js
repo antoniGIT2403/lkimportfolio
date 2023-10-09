@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, NavLink, Switch } from "react-router-dom";
 
 import Design from "./projet-composant/design.js";
 import Paintings from "./projet-composant/paintings.js";
@@ -9,22 +9,20 @@ import Clip from "./projet-composant/clip.js";
 import All from "./projet-composant/all.js";
 import { Redirect } from "react-router-dom";
 
-
 function Project(props) {
-
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <div className="App">
           <div className="">
             <div className="nav  flex-column subnav">
-               <NavLink to="/project/all" activeClassName="active-NavLink"  >
+              <NavLink to="/project/all" activeClassName="active-NavLink">
                 ALL
               </NavLink>
               <NavLink to="/project/paintings" activeClassName="active-NavLink">
                 PAINTINGS
               </NavLink>
-              <NavLink to="/project/books" activeClassName="active-NavLink" >
+              <NavLink to="/project/books" activeClassName="active-NavLink">
                 BOOKS
               </NavLink>
               <NavLink to="/project/branding" activeClassName="active-NavLink">
@@ -39,17 +37,19 @@ function Project(props) {
               </NavLink>
             </div>
           </div>
-          <Route exact path="/project">
-            <Redirect to="/project/all" />
-          </Route>
-      <Route exact path="/project/all" component={All} />
-          <Route exact path="/project/paintings" component={Paintings} />
-          <Route exact path="/project/books" component={Books} />
-          <Route exact path="/project/branding" component={Branding} />
-          <Route exact path="/project/clips" component={Clip} />
-          <Route exact path="/project/design" component={Design} />
+          <Switch>
+            <Route exact path="/project">
+              <Redirect to="/project/all" />
+            </Route>
+            <Route exact path="/project/all" component={All} />
+            <Route exact path="/project/paintings" component={Paintings} />
+            <Route exact path="/project/books" component={Books} />
+            <Route exact path="/project/branding" component={Branding} />
+            <Route exact path="/project/clips" component={Clip} />
+            <Route exact path="/project/design" component={Design} />
+          </Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 
 
 import Meetings from "./press-composant/meetings.js";
@@ -13,11 +13,11 @@ import { Redirect } from "react-router-dom";
 function Press(props) {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <div className="App">
           <div className="">
             <div className="nav  flex-column subnav">
-               <NavLink to="/press/all" activeClassName="active-NavLink">
+              <NavLink to="/press/all" activeClassName="active-NavLink">
                 ALL
               </NavLink>
               <NavLink to="/press/newspaper" activeClassName="active-NavLink">
@@ -32,23 +32,23 @@ function Press(props) {
               <NavLink to="/press/meetings" activeClassName="active-NavLink">
                 MEETINGS
               </NavLink>
-            
             </div>
           </div>
-          <Route exact path="/press">
-            <Redirect to="/press/all" />
-          </Route>
-          <Route exact path="/press/all" component={All} />
-          <Route exact path="/press/newspaper" component={Newspapers} />
-          <Route exact path="/press/tv" component={Tv} />
-          <Route exact path="/press/radio" component={Radio} />
-         
-          <Route exact path="/press/meetings" component={Meetings} />
-          
+          <Switch>
+            <Route exact path="/press">
+              <Redirect to="/press/all" />
+            </Route>
+            <Route exact path="/press/all" component={All} />
+            <Route exact path="/press/newspaper" component={Newspapers} />
+            <Route exact path="/press/tv" component={Tv} />
+            <Route exact path="/press/radio" component={Radio} />
+
+            <Route exact path="/press/meetings" component={Meetings} />
+          </Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
-  )
+  );
 }
  
 export default Press;

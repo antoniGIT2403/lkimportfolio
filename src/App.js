@@ -1,6 +1,6 @@
 import "./App.css";
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
-import Projects from "./project.js";
+import { HashRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
+import Project from "./project.js";
 import About from "./about.js";
 import Landing from "./landing.js";
 import Press from "./press.js";
@@ -47,7 +47,7 @@ class App extends Component {
       <img src={logo} onClick={() => history.push('/lkimportfolio')} alt="Project Imagee" className="logo" />
     ))
     return (
-      <BrowserRouter>
+      <Router>
         <div className="App">
         <div className="header-burger">
         <a href='https://lkimshop.bigcartel.com/?fbclid=IwAR1t93AARycSHv1ztEYi5e50bVfET_Xc66YOjXduBtWK25qo7wD94Mzq1tM'  target="_blank"><img src={shopbtn} alt="Project e" className="shop-btn" /> </a>
@@ -116,15 +116,17 @@ class App extends Component {
  
             </div>
           </div>
-          <Route exact path="/project" component={Projects} />
+          <Switch>
+          <Route  path="/project" component={Project} />
           <Route exact path="/lkimportfolio" component={Landing} />
           <Route exact path="/" component={Landing} />
           <Route path="/press" component={Press} />
           <Route exact path="/contact" component={Contact} />
 
           <Route path="/about" component={About} />
+</Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
